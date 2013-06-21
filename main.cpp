@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <memory>
 
 using namespace std;
 
@@ -14,7 +13,7 @@ class A
     void speak();
     B* getB();
   private:
-    shared_ptr<B*> m_b;
+    B* m_b;
 };
 
 A::A() : m_b( NULL )
